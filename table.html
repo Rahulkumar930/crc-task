@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Table of 11 (Only numbers containing digit 5)</h2>
+
+<button onclick="printTable()">Show Table</button>
+
+<p id="result"></p>
+
+<script>
+function printTable() {
+    let n = 11;
+    let output = "";
+
+    for (let i = 1; i <= 50; i++) {
+        let value = n * i;
+
+        // check if digit 5 is present
+        if (value.toString().includes('5')) {
+            output += n + " x " + i + " = " + value + "<br>";
+        }
+    }
+
+    document.getElementById("result").innerHTML = output;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Task 4</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f9fbff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .container {
+        background: white;
+        padding: 30px;
+        border-radius: 12px;
+        width: 450px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    }
+
+    h2 {
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    .buttons {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    button {
+        padding: 10px 18px;
+        border-radius: 20px;
+        border: none;
+        font-size: 14px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .green {
+        background: #b8f5d0;
+        color: #0a5c36;
+    }
+
+    .green:hover {
+        background: #8ee6b3;
+    }
+
+    .gray {
+        background: #f1f1f1;
+        color: #333;
+        border: 1px solid #ccc;
+    }
+
+    .gray:hover {
+        background: #e0e0e0;
+    }
+
+    #status {
+        margin-top: 25px;
+        font-size: 18px;
+        color: #444;
+    }
+</style>
+
+</head>
+<body>
+
+<div class="container">
+    <h2>Task 4</h2>
+
+    <div class="buttons">
+        <button class="green" onclick="addToBag()">Add to Bag</button>
+        <button class="gray" onclick="moveToWishlist()">Move to Wishlist</button>
+        <button class="green" onclick="addMore()">Add 1 more item</button>
+    </div>
+
+    <p id="status">Your Bag has 0 Items</p>
+</div>
+
+<script>
+    let count = 0;
+
+    function updateDisplay() {
+        document.getElementById("status").innerText =
+            "Your Bag has " + count + " Item" + (count !== 1 ? "s" : "");
+    }
+
+    function addToBag() {
+        count = 1;
+        updateDisplay();
+    }
+
+    function moveToWishlist() {
+        count = 0;
+        updateDisplay();
+    }
+
+    function addMore() {
+        count++;
+        updateDisplay();
+    }
+</script>
+
+</body>
+</html>

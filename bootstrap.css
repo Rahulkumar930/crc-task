@@ -1,0 +1,94 @@
+/* BODY BACKGROUND (Gradient) */
+body {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+/* MAIN CONTAINER */
+.container {
+    background: #ffffff;
+    padding: 25px;
+    margin-top: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* NAME HEADER */
+.one {
+    font-weight: bold;
+    font-size: 32px;
+    color: #ffffff;
+    background: linear-gradient(90deg, #180cc7, hsl(124, 98%, 74%));
+    padding: 12px;
+    border-radius: 8px;
+    letter-spacing: 1px;
+}
+
+/* SECTION HEADINGS */
+.list-group-item-dark {
+    background: linear-gradient(90deg, #c3dc36, #8621c9);
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* LIST ITEMS */
+.list-group-item {
+    background-color: #f9f9f9;
+    border: none;
+    transition: 0.3s;
+}
+
+/* HOVER EFFECT */
+.list-group-item:hover {
+    background-color: #eef2ff;
+    transform: scale(1.02);
+}
+
+/* CARD DESIGN */
+.card {
+    margin-top: 15px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #ffecd2, #fcb69f);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+/* CARD TEXT */
+.card-title {
+    color: #333;
+    font-weight: bold;
+}
+
+.card-text {
+    color: #444;
+}
+
+/* ICONS */
+.fa {
+    margin-right: 8px;
+    color: #f3fa1a;
+}
+
+/* LINKS */
+a {
+    color: #5b86e5;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #02649c;
+}
+
+/* CONTACT ICON ALIGN */
+.list-group-item i {
+    width: 22px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .one {
+        font-size: 24px;
+    }
+}

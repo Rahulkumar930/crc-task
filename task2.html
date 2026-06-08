@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task 2</title>
+</head>
+<body>
+
+    <h1>Task 2</h1>
+    <hr>
+
+    <h3>Addition of Two Numbers</h3>
+
+
+    <input type="number" id="num1" value="34"><br><br>
+    <input type="number" id="num2" value="11"><br><br>
+
+    
+    <button onclick="addNumbers()">Add</button>
+
+    <script>
+        function addNumbers() {
+            
+            let n1 = document.getElementById("num1").value;
+            let n2 = document.getElementById("num2").value;
+
+            
+            let result = parseInt(n1) + parseInt(n2);
+
+        
+            alert(result);
+        }
+    </script>
+
+</body>
+</html>
